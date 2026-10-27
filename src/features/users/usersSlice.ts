@@ -6,7 +6,9 @@ type UsersStateType = User[];
 
 const initialState: UsersStateType = [];
 
-export const fetchUsers = createAsyncThunk('users/fetchUsers', () => getUsers());
+export const fetchUsers = createAsyncThunk('users/fetchUsers', () =>
+  getUsers(),
+);
 
 export const usersSlice = createSlice({
   name: 'users',
